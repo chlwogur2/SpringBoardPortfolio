@@ -1,7 +1,7 @@
 # SpringBoardPortfolio
 SpringBoot + Spring Data JPA + MariaDB
 
-**
+*application.yml*
 ```
 spring:
   datasource:

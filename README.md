@@ -65,3 +65,5 @@ tasks.named('test') {
 }
 
 ```
+
+*MariaDB 에서 Like 라는 sql 키워드가 있나봄*

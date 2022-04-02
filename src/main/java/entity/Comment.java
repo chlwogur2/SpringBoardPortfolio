@@ -8,7 +8,7 @@ import javax.persistence.*;
 
 @Entity @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-public class Comment {
+public class Comment extends BaseTimeEntity{
 
     @Id @GeneratedValue
     @Column(name = "comment_id")
@@ -16,11 +16,11 @@ public class Comment {
 
     private String content;
 
-    private int likeCount;
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Member member;
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Board board;
+
 }

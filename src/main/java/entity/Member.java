@@ -11,7 +11,7 @@ import javax.persistence.Id;
 
 @Entity @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Member {
+public class Member extends BaseTimeEntity{
 
     @Id @GeneratedValue
     @Column(name = "member_id")
@@ -19,5 +19,7 @@ public class Member {
 
     private String username;
 
-
+    public Member(String username) {
+        this.username = username;
+    }
 }

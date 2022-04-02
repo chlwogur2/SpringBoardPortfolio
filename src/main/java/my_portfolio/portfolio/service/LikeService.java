@@ -1,17 +1,14 @@
-package service;
+package my_portfolio.portfolio.service;
 
-import entity.Board;
-import entity.Comment;
-import entity.Like;
-import entity.Member;
+import my_portfolio.portfolio.entity.Board;
+import my_portfolio.portfolio.entity.Comment;
+import my_portfolio.portfolio.entity.Like;
+import my_portfolio.portfolio.entity.Member;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import repository.BoardRepository;
-import repository.CommentRepository;
-import repository.LikeRepository;
-import repository.MemberRepository;
-
-import java.util.Optional;
+import my_portfolio.portfolio.repository.BoardRepository;
+import my_portfolio.portfolio.repository.CommentRepository;
+import my_portfolio.portfolio.repository.LikeRepository;
 
 @Service
 @RequiredArgsConstructor

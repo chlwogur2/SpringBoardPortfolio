@@ -1,4 +1,4 @@
-package configurations;
+package my_portfolio.portfolio.configurations;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;

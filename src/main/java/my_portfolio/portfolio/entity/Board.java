@@ -1,4 +1,4 @@
-package entity;
+package my_portfolio.portfolio.entity;
 
 import lombok.AccessLevel;
 import lombok.Getter;

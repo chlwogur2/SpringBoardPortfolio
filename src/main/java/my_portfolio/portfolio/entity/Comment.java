@@ -1,4 +1,4 @@
-package entity;
+package my_portfolio.portfolio.entity;
 
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -23,4 +23,9 @@ public class Comment extends BaseTimeEntity{
     @ManyToOne(fetch = FetchType.LAZY)
     private Board board;
 
+    public Comment(Member member, Board board, String content) {
+        this.content = content;
+        this.member = member;
+        this.board = board;
+    }
 }

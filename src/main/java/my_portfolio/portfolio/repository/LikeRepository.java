@@ -1,9 +1,9 @@
-package repository;
+package my_portfolio.portfolio.repository;
 
-import entity.Board;
-import entity.Comment;
-import entity.Like;
-import entity.Member;
+import my_portfolio.portfolio.entity.Board;
+import my_portfolio.portfolio.entity.Comment;
+import my_portfolio.portfolio.entity.Like;
+import my_portfolio.portfolio.entity.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package entity;
+package my_portfolio.portfolio.entity;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;

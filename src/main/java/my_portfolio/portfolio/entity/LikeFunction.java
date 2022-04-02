@@ -9,11 +9,11 @@ import javax.persistence.*;
 
 @Entity @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-public class Like extends BaseTimeEntity{
+public class LikeFunction extends BaseTimeEntity{
 
     @Id @GeneratedValue
     @Column(name = "like_id")
-    private String id;
+    private Long id;
 
     private int likeCount;
 
@@ -30,13 +30,13 @@ public class Like extends BaseTimeEntity{
     private Comment comment;
 
     // 게시글 좋아요 생성자
-    public Like(Member member, Board board) {
+    public LikeFunction(Member member, Board board) {
         this.member = member;
         this.board = board;
     }
 
     // 댓글 좋아요 생성자
-    public Like(Member member, Comment comment) {
+    public LikeFunction(Member member, Comment comment) {
         this.member = member;
         this.comment = comment;
     }

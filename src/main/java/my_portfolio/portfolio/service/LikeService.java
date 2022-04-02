@@ -2,7 +2,7 @@ package my_portfolio.portfolio.service;
 
 import my_portfolio.portfolio.entity.Board;
 import my_portfolio.portfolio.entity.Comment;
-import my_portfolio.portfolio.entity.Like;
+import my_portfolio.portfolio.entity.LikeFunction;
 import my_portfolio.portfolio.entity.Member;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -35,9 +35,9 @@ public class LikeService {
 
        // 사용자가 좋아요 누른적이 없으면
         if (boardAlreadyLike(member, board)) {
-            Like like = new Like(member, board);
-            likeRepository.save(like);
-            like.addLike();
+            LikeFunction likeFunction = new LikeFunction(member, board);
+            likeRepository.save(likeFunction);
+            likeFunction.addLike();
 
             return true;
         }
@@ -51,9 +51,9 @@ public class LikeService {
 
         // 사용자가 좋아요 누른적이 없으면
         if (commentAlreadyLike(member,comment)){
-            Like like = new Like(member, comment);
-            likeRepository.save(like);
-            like.addLike();
+            LikeFunction likeFunction = new LikeFunction(member, comment);
+            likeRepository.save(likeFunction);
+            likeFunction.addLike();
 
             return true;
         }

@@ -34,8 +34,8 @@ class LikeServiceTest {
         likeService.boardAddLike(member, board.getId());
 
         // then
-        Like like = likeRepository.findByMemberAndBoard(member, board).get();
-        assertEquals(like.getLikeCount(),1);
+        LikeFunction likeFunction = likeRepository.findByMemberAndBoard(member, board).get();
+        assertEquals(likeFunction.getLikeCount(),1);
 
     }
     @Test
@@ -52,8 +52,8 @@ class LikeServiceTest {
         likeService.boardAddLike(member, board.getId());
 
         // then
-        Like like = likeRepository.findByMemberAndBoard(member, board).get();
-        assertEquals(like.getLikeCount(),1);
+        LikeFunction likeFunction = likeRepository.findByMemberAndBoard(member, board).get();
+        assertEquals(likeFunction.getLikeCount(),1);
     }
     @Test
     void 댓글좋아요(){
@@ -69,8 +69,8 @@ class LikeServiceTest {
         likeService.commentAddLike(member, comment.getId());
 
         // then
-        Like like = likeRepository.findByMemberAndComment(member, comment).get();
-        assertEquals(like.getLikeCount(),1);
+        LikeFunction likeFunction = likeRepository.findByMemberAndComment(member, comment).get();
+        assertEquals(likeFunction.getLikeCount(),1);
     }
 
 }
